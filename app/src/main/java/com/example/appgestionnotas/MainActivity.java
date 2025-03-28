@@ -28,5 +28,10 @@ public class MainActivity extends AppCompatActivity {
         List<Estudiante> estudiantes = estudianteController.obtenerEstudiantes();
         // Aquí debes implementar un adaptador para mostrar los estudiantes en un ListView o RecyclerView
 
+        listView.setAdapter(adapter);
+
+
+        //setContentView(R.layout.activity_main_bd);
+        setContentView (binding.getRoot());
     }
 }
