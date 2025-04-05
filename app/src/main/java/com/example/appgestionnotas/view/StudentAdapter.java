@@ -1,13 +1,14 @@
-package com.example.appgestionnotas.model;
+package com.example.appgestionnotas.view;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
-import androidx.constraintlayout.utils.widget.MotionLabel;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.appgestionnotas.R;
+import com.example.appgestionnotas.model.Estudiante;
+
 import java.util.List;
 
 public class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.ViewHolder> {
@@ -29,6 +30,7 @@ public class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.ViewHold
         Estudiante estudiante = listaEstudiantes.get(position);
         holder.txtName.setText("Nombre: " + estudiante.getName());
         holder.txtidCode.setText("Código: " + estudiante.getIdCode());
+
     }
 
     @Override

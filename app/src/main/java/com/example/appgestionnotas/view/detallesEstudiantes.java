@@ -1,6 +1,5 @@
-package com.example.appgestionnotas.model;
+package com.example.appgestionnotas.view;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;

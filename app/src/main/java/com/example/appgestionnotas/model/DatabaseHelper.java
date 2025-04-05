@@ -14,7 +14,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-    db.execSQL("create table students (student_id integer  primary key AUTOINCREMENT, name text, id_code text)");
+    db.execSQL("create table students (id integer  primary key AUTOINCREMENT, name text, id_code text)");
 
     db.execSQL("create table notas (id integer primary key AUTOINCREMENT, student_id integer, value real, foreign key(student_id) references students(id)) ");
     }

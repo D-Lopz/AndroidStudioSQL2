@@ -1,6 +1,5 @@
 package com.example.appgestionnotas.controller;
 
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -13,22 +12,23 @@ import java.util.List;
 public class StudentController {
     private DatabaseHelper dbHelper;
     public StudentController(Context context) {
+
         dbHelper = new DatabaseHelper(context);
     }
 
     public void agregarEstudiante(String nombre, String codigo) {
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put("nombre", nombre);
-        values.put("codigo", codigo);
-        db.insert("estudiantes", null, values);
+        values.put("name", nombre);
+        values.put("id_code", codigo);
+        db.insert("students", null, values);
         db.close();
     }
 
     public List<Estudiante> obtenerEstudiantes() {
         List<Estudiante> lista = new ArrayList<>();
         SQLiteDatabase db = dbHelper.getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT * FROM studets", null);
+        Cursor cursor = db.rawQuery("SELECT * FROM students", null);
 
         if (cursor.moveToFirst()) {
             do {

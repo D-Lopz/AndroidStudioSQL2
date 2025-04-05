@@ -13,13 +13,13 @@
         android:theme="@style/Theme.AppGestionNotas"
         tools:targetApi="31">
         <activity
-            android:name=".model.detallesEstudiantes"
+            android:name=".view.detallesEstudiantes"
             android:exported="false" />
         <activity
-            android:name=".model.AgregarEstudiantes"
+            android:name=".view.AgregarEstudiantes"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
