@@ -20,7 +20,7 @@ public class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.ViewHold
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_estudiante, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_detalles_estudiantes, parent, false);
         return new ViewHolder(view);
     }
 
@@ -33,12 +33,13 @@ public class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.ViewHold
 
     @Override
     public int getItemCount() {
+
         return listaEstudiantes.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        public MotionLabel txtidCode;
-        TextView txtName, txtidCode;
+        public TextView txtidCode;
+        TextView txtName;
 
         public ViewHolder(View itemView) {
             super(itemView);
