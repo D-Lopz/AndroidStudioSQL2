@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="purple_500">#9C27B0</color> <!-- Un púrpura más vivo -->
+    <color name="purple_700">#7B1FA2</color> <!-- Un púrpura más oscuro -->
+    <color name="holo_blue_dark">#1976D2</color>
+    <color name="holo_green_dark">#388E3C</color>
+    <color name="holo_red_dark">#D32F2F</color>
+    <color name="light_gray">#F5F5F5</color>
+
 </resources>
